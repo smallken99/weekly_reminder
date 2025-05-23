@@ -3,7 +3,7 @@ import ReminderForm from './ReminderForm';
 import ReminderList from './ReminderList';
 import NotificationDisplay from './Notification'; // Renamed to avoid conflict with browser Notification API
 
-function App() {
+function AppComponent() {
   const [reminders, setReminders] = useState(() => {
     const savedReminders = localStorage.getItem('reminders');
     return savedReminders ? JSON.parse(savedReminders) : [];
@@ -98,4 +98,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppComponent;
